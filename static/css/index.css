@@ -1,0 +1,33 @@
+html {
+  background-color: #b6e1fc;
+  color: darkslategray;
+  font-family: Helvetica;
+  max-width: 800px;
+  margin-left: 30px;
+}
+
+header {
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: green;
+}
+
+body, img {
+  border: 3px solid purple;
+  border-radius: 10px;
+}
+
+body {
+  padding: 16px;
+
+}
+
+#Mission{
+  background-color:cornsilk;
+}
+
+#Founder{
+  background-color:cornsilk;
+}
