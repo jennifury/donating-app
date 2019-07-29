@@ -1,27 +1,33 @@
 html {
-  background-color: #b6e1fc;
-  color: darkslategray;
+  background-color: skyblue;
+  color: black;
   font-family: Helvetica;
   max-width: 800px;
-  margin-left: 30px;
+  
+}
+.homestead{
+   margin:auto;
+   text-align: center;
 }
 
-header {
-  background-color: white;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-  color: green;
-}
-
-body, img {
-  border: 3px solid purple;
+.Truegift {
+  border:1px
   border-radius: 10px;
+  color: white;
+}
+
+img {
+  border: 15px solid skyblue;
+  border-radius: 300px;
 }
 
 body {
   padding: 16px;
+}
 
+img {
+  height: 300px;
+  width: 300px;
 }
 
 #Mission{

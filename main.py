@@ -12,9 +12,14 @@ class AboutUsHandler(webapp2.RequestHandler):
         about_us_template= don_app_env.get_template('templates/about_us.html')
         self.response.write(about_us_template.render())
 
+class HomeHandler(webapp2.RequestHandler):
+    def get(self):
+        donation_template = don_app_env.get_template('templates/home.html')
+        self.response.write(donation_template.render())
+
 class NewPostHandler(webapp2.RequestHandler):
-	def get(self):
-		post_template= don_app_env.get_template('templates/post_upload.html')
+    def get(self):
+        post_template= don_app_env.get_template('templates/post_upload.html')
         self.response.write(post_template.render())
 
     def post(self):
@@ -26,6 +31,7 @@ class NewPostHandler(webapp2.RequestHandler):
         self.response.write(post_template.render())
 
 app = webapp2.WSGIApplication([
-    ('/', AboutUsHandler),
-    ('/newpost', NewPostHandler)
+    ('/', HomeHandler),
+    ('/about_us', AboutUsHandler),
+    ('/newdonation', NewPostHandler)
 ], debug=True)
