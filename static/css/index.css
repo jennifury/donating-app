@@ -9,11 +9,23 @@ html {
    margin:auto;
    text-align: center;
 }
+.about {
+   text-align: left;
+}
 
 .Truegift {
   border:1px
   border-radius: 10px;
   color: white;
+}
+#button1 {
+  margin:auto;
+  align-content: center;
+  background-color: #e6ffe6;
+  height: 50px;
+  width:200px;
+  border-color: white;
+  font-size: 24px;
 }
 
 img {
