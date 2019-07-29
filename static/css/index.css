@@ -3,7 +3,7 @@ html {
   color: darkslategray;
   font-family: Helvetica;
   max-width: 800px;
-  margin-left: 30px;
+  margin: auto;
 }
 
 header {
@@ -14,7 +14,33 @@ header {
   color: green;
 }
 
-body, img {
+.homestead{
+   margin:auto;
+   text-align: center;
+}
+
+.Truegift {
+  border:1px
+  border-radius: 10px;
+  color: white;
+}
+
+img {
+  border: 15px solid skyblue;
+  border-radius: 300px;
+  height: 300px;
+  width: 300px;
+}
+
+footer {
+  background-color: white;
+  padding: 10px;
+  text-align: left;
+  color: white;
+  padding-left: 100px;
+}
+
+body {
   border: 3px solid purple;
   border-radius: 10px;
 }
