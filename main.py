@@ -6,13 +6,13 @@ don_app_env = jinja2.Environment(
     loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
     extensions=['jinja2.ext.autoescape'],
     autoescape=True)
-    
-class WelcomeHandler(webapp2.RequestHandler):
-    def get(self):  
-    
-    def post(self):
-        
-    
+
+class AboutUsHandler(webapp2.RequestHandler):
+    def get(self):
+        about_us_template= don_app_env.get_template('templates/about_us.html')
+        self.response. write(about_us_template.render())
+
+
 app = webapp2.WSGIApplication([
-    ('/', WelcomeHandler)  
+    ('/', AboutUsHandler)
 ], debug=True)
