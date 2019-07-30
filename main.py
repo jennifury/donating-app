@@ -32,12 +32,19 @@ class NewPostHandler(webapp2.RequestHandler):
 
 class ItemHandler(webapp2.RequestHandler):
     def get(self):
-        about_us_template= don_app_env.get_template('templates/item_page.html')
-        self.response.write(about_us_template.render())
+        item_template= don_app_env.get_template('templates/item_page.html')
+        self.response.write(item_template.render())
+
+class DonationDisplayHandler(webapp2.RequestHandler):
+    def get(self):
+        donation_display_template= don_app_env.get_template('templates/donation_display.html')
+        self.response.write(donation_display_template.render())
+
 
 app = webapp2.WSGIApplication([
     ('/', HomeHandler),
     ('/about_us', AboutUsHandler),
+    ('/donation_display', DonationDisplayHandler),
     ('/newdonation', NewPostHandler),
     ('/item', ItemHandler)
 ], debug=True)
