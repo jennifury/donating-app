@@ -10,7 +10,6 @@ html {
 }
 
 header {
-<<<<<<< HEAD
   background-color: #ef9a9a;
   padding: 15px;
   text-align: center;
@@ -24,20 +23,12 @@ header {
    text-align: center;
 }
 
-=======
-  background-color: #fff2cc;
-  padding: 15px;
-  text-align: center;
-  font-size: 20px;
-  color: #663300;
-}
-
 .homestead{
    margin:auto;
    text-align: center;
 }
 
->>>>>>> 5bb1caace5aa7717d2f74ccb770ac70ee818ecbc
+
 .Truegift {
   border:1px
   border-radius: 10px;
@@ -57,10 +48,8 @@ header {
   border-color: white;
   font-size: 24px;
   padding: 10px;
-<<<<<<< HEAD
   font-family: "Raleway", sans-serif;
-=======
->>>>>>> 5bb1caace5aa7717d2f74ccb770ac70ee818ecbc
+
 }
 
 img {
@@ -71,7 +60,6 @@ img {
 }
 
 footer {
-<<<<<<< HEAD
   background-color: #b2dfdb;
   padding: 10px;
   text-align: center;
@@ -80,8 +68,6 @@ footer {
 }
 
 body {
-
-=======
   background-color: #fff2cc;
   padding: 10px;
   text-align: center;
