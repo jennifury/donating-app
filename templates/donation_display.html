@@ -6,11 +6,12 @@
     <script src = "/static/js/index.js"></script>
   </head>
   <body>
-    <h1>Donation</h1>
+    <h1>Donations Available</h1>
 
     <h2></h2>
-    <img src="https://image.shutterstock.com/image-vector/circle-tree-logo-isolated-on-260nw-1215183556.jpg"/>
-    <p> <a href='/newdonation'>Donate Today!</p>
-    <a href="/about_us">About us </a>
+    {% for i in range(num_of_items) %}
+      <img src='imageit?index={{ i }}' alt='no image'></img>
+    {% endfor %}
+
   </body>
 </html>
