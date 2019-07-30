@@ -1,33 +1,77 @@
 html {
   background-color: #b6e1fc;
+  background-image: url("http://yodobi.com/4k-Wallpapers/spring-flowers-wallpaper-high-definition-Is-4K-Wallpaper.jpg");
+  background-size: cover;
+  background-position: center;
   color: darkslategray;
-  font-family: Helvetica;
+  font-family: sans-serif;
   max-width: 800px;
-  margin-left: 30px;
+  margin: auto;
 }
 
 header {
-  background-color: white;
-  padding: 30px;
+  background-color: #ef9a9a;
+  padding: 15px;
   text-align: center;
-  font-size: 35px;
-  color: green;
+  font-size: 20px;
+  color: white;
+
 }
 
-body, img {
-  border: 3px solid purple;
+.homestead{
+   margin:auto;
+   text-align: center;
+}
+
+.Truegift {
+  border:1px
   border-radius: 10px;
+  color: white;
+}
+
+.about {
+   text-align: left;
+}
+
+#button1 {
+  margin:auto;
+  align-content: center;
+  background-color: #e6ffe6;
+  height: 50px;
+  width:200px;
+  border-color: white;
+  font-size: 24px;
+  padding: 10px;
+  font-family: "Raleway", sans-serif;
+}
+
+img {
+  border: 15px solid skyblue;
+  border-radius: 300px;
+  height: 300px;
+  width: 300px;
+}
+
+footer {
+  background-color: #b2dfdb;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-family: "Raleway", sans-serif;
 }
 
 body {
-  padding: 16px;
 
+  padding: 16px;
 }
 
 #Mission{
+
   background-color:cornsilk;
+  padding-left: 5px;
 }
 
 #Founder{
   background-color:cornsilk;
+  padding-left: 5px;
 }
