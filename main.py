@@ -53,23 +53,23 @@ class DonationDisplayHandler(webapp2.RequestHandler):
     def get(self):
 
         posts = NewPost.query().fetch()
-        image_dict = {
-        "num_of_items": len(posts)
+        list_dict = {
+        "num_of_items": len(posts),
+        "items": posts
         }
 
         donation_display_template= don_app_env.get_template('templates/donation_display.html')
-        self.response.write(donation_display_template.render(image_dict))
+        self.response.write(donation_display_template.render(list_dict))
 
 class ImageHandler(webapp2.RequestHandler):
     def get(self):
         posts = NewPost.query().fetch()
 
-        image_dict = {
+        list_dict = {
         "num_of_items": len(posts)
         }
         index = self.request.get('index')
         index = int(index)
-        posts[index].image
         if posts[index].image:
           self.response.headers['Content-Type'] = "image/jpg"
           self.response.out.write(posts[index].image)

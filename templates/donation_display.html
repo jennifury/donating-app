@@ -18,33 +18,29 @@
     <h2>Donations Available</h2>
       <br>
 
-
-
-
-
-
-
     <!--   General ITEM -->
     <section class="cards">
-
+      {% for info in items %}
         {% for i in range(num_of_items) %}
-      <article class="card">
-        <picture class="thumbnail">
-          <img src='imageit?index={{ i }}' alt='no image'></img>
-        </picture>
-        <div class="card-content">
-          <p class="category category__00">Item</p>
-          <h4>UseName</h4>
-          <p>Description</p>
-       </div><!-- .card-content -->
-        <footer>
-          <div class="post-meta">
-            <span class="date"><i class="fa fa-clock-o"></i> Today</span>
-            <span class="comments"><i class="fa fa-comments"></i><a href="#"> San Jose</a></span>
-            </div>
-        </footer>
-      </article>
+        <article class="card">
+          <picture class="thumbnail">
+            <img class="category__00"src='imageit?index={{ i }}' alt='no image'></img>
+          </picture>
+          <div class="card-content">
+            <p class="category category__00">{{info.item}}</p>
+            <h4>{{info.name}}</h4>
+            <p>{{info.paragraph}}</p>
+         </div><!-- .card-content -->
+          <footer>
+            <div class="post-meta">
+              <span class="date"><i class="fa fa-clock-o"></i> Today</span>
+              <span class="comments"><i class="fa fa-comments"></i><a href="#"> San Jose</a></span>
+              </div>
+          </footer>
+        </article>
+        {% endfor %}
       {% endfor %}
+
 
 
 
