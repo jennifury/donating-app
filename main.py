@@ -51,7 +51,7 @@ class ItemHandler(webapp2.RequestHandler):
 
 class DonationDisplayHandler(webapp2.RequestHandler):
     def get(self):
-
+       
         posts = NewPost.query().fetch()
         image_dict = {
         "num_of_items": len(posts)
