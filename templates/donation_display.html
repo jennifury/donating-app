@@ -15,7 +15,7 @@
     <button  onclick="window.location.href = '/';" id = 'backbutton'> Go back! </button>
     <button  onclick="window.location.href = '/newdonation';" id = 'backbutton'> Donate Now! </button>
 
-    <h2>Donations</h2>
+    <h2>Donations Available</h2>
       <br>
 
 
@@ -27,9 +27,10 @@
     <!--   General ITEM -->
     <section class="cards">
 
+        {% for i in range(num_of_items) %}
       <article class="card">
         <picture class="thumbnail">
-             <img class="category__00" src="https://www.chrisvenables.co.uk/wordpress/wp-content/uploads/20180124_200541379_iOS.jpg" alt="" />
+          <img src='imageit?index={{ i }}' alt='no image'></img>
         </picture>
         <div class="card-content">
           <p class="category category__00">Item</p>
@@ -43,6 +44,7 @@
             </div>
         </footer>
       </article>
+      {% endfor %}
 
 
 
