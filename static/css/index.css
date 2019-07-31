@@ -35,6 +35,17 @@ h2 {
   text-transform: uppercase;
 }
 
+h4{
+
+    color: #000;
+    margin: 2rem 0 .5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+    text-transform: uppercase;
+
+}
+
 img {
   display: block;
     border: 0;
@@ -52,7 +63,6 @@ img {
 }
 
 .card {
-  /*height: 200px;*/
   background: white;
   border: 2px solid #e7e7e7;
   border-radius: 4px;
@@ -71,7 +81,7 @@ img {
 .thumbnail img {
   fill: #c7c4c4;
   height: 135px;
-  opacity: .9;
+  opacity: .75;
   padding: 1.5rem;
 }
 
@@ -124,24 +134,8 @@ footer {
     text-transform: uppercase;
 }
 
-.category__01 {
-  background-color: #50c6db;
-}
-
-.category__02 {
-  background-color: #5d5e5e;
-}
-
-.category__03 {
-  background-color: #51bb7b;
-}
-
-.category__04 {
-  background-color: #f47820;
-}
-
-.category__05 {
-  background-color: #8350a0;
+.category__00 {
+  background-color: #7986cb ;
 }
 
 .post-meta {
@@ -151,9 +145,6 @@ footer {
 .comments {
   margin-left: .5rem;
 }
-
-
-
 
 /**/
 header {
@@ -169,12 +160,6 @@ header {
    margin:auto;
    text-align: center;
 }
-
-.homestead{
-   margin:auto;
-   text-align: center;
-}
-
 
 .Truegift {
   border:1px
@@ -235,4 +220,9 @@ body {
 #Founder{
   background-color:cornsilk;
   padding-left: 5px;
+}
+
+#about_us_buttons{
+  padding-left: 10px;
+  text-align: left;
 }
