@@ -6,29 +6,28 @@
     <link rel="stylesheet" href="/static/css/index.css">
     <script src = "/static/js/index.js"></script>
   </head>
-
 <body>
   <header>
-  <h1>True Gift</h1>
+    <h1>True Gift</h1>
   </header>
   <br>
+  <button  onclick="window.location.href = '/';" id = 'backbutton'> Go back! </button>
   <h2>Donation Post</h2>
 
-<form id = "post_data">
-  Your name:<br>
-  <input type="text" name="name"><br>
-  Your item: <br>
-  <input type="text" name="item" ><br><br>
-  Upload a picture or two!<br>
-  <input type="file" name="pic" accept="image/*"> <br>
-  <input type="submit" value="Upload"> <br> <br>
-  Insert a description of your item(s) below:<br>
-  <textarea rows="10" cols="50" placeholder="Type text here" name = "paragraph"></textarea> <br>
-  <input type="submit" value="Submit!">
-</form>
+  <form id = "post_data" action = "/newdonation"  enctype="multipart/form-data"  method="post">
+    Your name:<br>
+    <input type="text" name="username" required="required"><br>
+    Your item: <br>
+    <input type="text" name="item" required="required"><br><br>
+    Upload an image!<br>
+    <input type="file" name="pics" accept="image/*" required="required" multiple> <br> <br>
+    Insert a description of your item(s) below:<br>
+    <textarea rows="10" cols="50" placeholder="Type text here" name = "paragraph" required="required"></textarea> <br>
+    <input type="submit" value="Submit!">
+  </form>
 
 </body>
-<br>
+  <br>
 <footer>
   <div id = 'about'>
     <a href="/about_us">About us </a>
