@@ -20,16 +20,16 @@
 
     <!--   General ITEM -->
     <section class="cards">
-
-      {% for i in range(num_of_items) %}
+      {% for info in items %}
+        {% for i in range(num_of_items) %}
         <article class="card">
           <picture class="thumbnail">
             <img class="category__00"src='imageit?index={{ i }}' alt='no image'></img>
           </picture>
           <div class="card-content">
-            <p class="category category__00">{{items[i].item}}</p>
-            <h4>{{items[i].name}}</h4>
-            <p>{{items[i].paragraph}}</p>
+            <p class="category category__00">{{info.item}}</p>
+            <h4>{{info.name}}</h4>
+            <p>{{info.paragraph}}</p>
          </div><!-- .card-content -->
           <footer>
             <div class="post-meta">
@@ -38,6 +38,7 @@
               </div>
           </footer>
         </article>
+        {% endfor %}
       {% endfor %}
 
 
